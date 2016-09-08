@@ -243,6 +243,125 @@
             
               
                 
+                <a class="post-title-link" href="/2016/09/08/Android中sp和dp区别/" itemprop="url">
+                  Android中sp和dp区别
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-08T17:04:15+08:00" content="2016-09-08">
+              2016-09-08
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/08/Android中sp和dp区别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/08/Android中sp和dp区别/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/08/Android中sp和dp区别/" class="leancloud_visitors" data-flag-title="Android中sp和dp区别">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="理解android中sp和dp区别"><a href="#理解android中sp和dp区别" class="headerlink" title="理解android中sp和dp区别"></a>理解android中sp和dp区别</h2><ul>
+<li>我们开始学的时候，前辈就告知，长度宽度的数值要用dp，字体的大小用sp，然后后面我们自己记住，然后使用使用就行了，后面发现 写麻木了，不小心，把字体的大小也用成dp后，其实运行出来的效果是一样的，后面用着用着，就都用成dp了。<hr>
+今天我尝试的去了解下，他们的区别，在项目中同时写了两个TextView，分别使用dp和sp为单位，运行结果发现，文字大小一样的，如图。</li>
+</ul>
+<p><img src="http://note.youdao.com/yws/public/resource/81254ddfe5df02148e8ad979b9cbbf15/xmlnote/16D4727C77664A628BEDC1C660E8D051/1768" alt="image"></p>
+<p>运行后，我发现当我尝试去调整手机系统字体大小的时候，就发现这样诡秘的一个情况。使用SP定义的字体会随着系统的更改而改变，但是用dp的字体依然没有发生改变，区别来了，有木有，效果图如下。</p>
+<p><img src="http://note.youdao.com/yws/public/resource/81254ddfe5df02148e8ad979b9cbbf15/xmlnote/F3518EFA95EA4CF4BED7C6F73A5B3363/1794" alt="image"></p>
+<p>有木有，区别出来了。通过这个，其实我们在想想，在某些特殊的情况下，如我们不想让字体的大小跟随系统文字设置的大小改变的话，我们或许可以常识使用这个，这或许可以叫属性的乱用，阴差阳错的实现另类的效果吧。</p>
+<hr>
+<p>每天进步，一起加油，点点滴滴汇成知识大河</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/03/第二篇文章/" itemprop="url">
                   个人博客搭建技术分享
                 </a>
@@ -651,7 +770,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
