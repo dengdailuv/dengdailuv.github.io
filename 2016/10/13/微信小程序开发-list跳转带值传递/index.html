@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="个人博客," />
+  <meta name="keywords" content="微信小程序," />
 
 
 
@@ -84,16 +84,46 @@
 
 
 
-<meta name="description" content="你是否看到平时他们无意之中透入的真实情感，你已经落后太多；你没有看到，你自己交流时，自己发现已经跟他们说不上对套的话了吗？你在干什么，看起来忙碌，但是你做出什么来了吗？不逼一下自己，三年这个会相差多大，你衡量的起吗？你想让大家都make fun of with you 吗？时间利用起来，不要浪费你，你真的没有时间可以玩了，行动起来，对自己狠一点，会有收获的，目标前进！！！">
+<meta name="description" content="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识
+
+设置id的方法标识跳转 在要跳转的item处，设置一个id并给当前的id赋值上对应的key值，比如一部电影的id（后面带着id去下一个页面查询，详细信息）如：
+
+
+后我们在js的bindtap的响应事件中获取，并传递到下一个界面中；
+
+ 通过e.currentTarget.id;获取设">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一天 你想好清楚了吗">
-<meta property="og:url" content="http://yoursite.com/2016/09/12/开学第一天/index.html">
+<meta property="og:title" content="微信小程序开发-list跳转带值传递">
+<meta property="og:url" content="http://yoursite.com/2016/10/13/微信小程序开发-list跳转带值传递/index.html">
 <meta property="og:site_name" content="Smaluv 芦苇虽小">
-<meta property="og:description" content="你是否看到平时他们无意之中透入的真实情感，你已经落后太多；你没有看到，你自己交流时，自己发现已经跟他们说不上对套的话了吗？你在干什么，看起来忙碌，但是你做出什么来了吗？不逼一下自己，三年这个会相差多大，你衡量的起吗？你想让大家都make fun of with you 吗？时间利用起来，不要浪费你，你真的没有时间可以玩了，行动起来，对自己狠一点，会有收获的，目标前进！！！">
-<meta property="og:updated_time" content="2016-09-13T09:16:48.698Z">
+<meta property="og:description" content="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识
+
+设置id的方法标识跳转 在要跳转的item处，设置一个id并给当前的id赋值上对应的key值，比如一部电影的id（后面带着id去下一个页面查询，详细信息）如：
+
+
+后我们在js的bindtap的响应事件中获取，并传递到下一个界面中；
+
+ 通过e.currentTarget.id;获取设">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/61A7F58F4C284225B5A836710089610C/374">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/B558EF17F7A3416CB89A83B57761A1B9/372">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/916AC69674154FF5840A483755523441/399">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/ADBAAC7F2AE4437F9F4317028910D732/411">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/9FD6EC16920C4828ACB902DB46132A94/407">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/BDEB5B20E84A4268A617B013345DEA88/417">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/D9879D54671245D085EB305BAAB007D1/428">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/6F9502AC3B97449E8DA62EDD40F01F94/452">
+<meta property="og:updated_time" content="2016-10-13T13:26:36.574Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一天 你想好清楚了吗">
-<meta name="twitter:description" content="你是否看到平时他们无意之中透入的真实情感，你已经落后太多；你没有看到，你自己交流时，自己发现已经跟他们说不上对套的话了吗？你在干什么，看起来忙碌，但是你做出什么来了吗？不逼一下自己，三年这个会相差多大，你衡量的起吗？你想让大家都make fun of with you 吗？时间利用起来，不要浪费你，你真的没有时间可以玩了，行动起来，对自己狠一点，会有收获的，目标前进！！！">
+<meta name="twitter:title" content="微信小程序开发-list跳转带值传递">
+<meta name="twitter:description" content="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识
+
+设置id的方法标识跳转 在要跳转的item处，设置一个id并给当前的id赋值上对应的key值，比如一部电影的id（后面带着id去下一个页面查询，详细信息）如：
+
+
+后我们在js的bindtap的响应事件中获取，并传递到下一个界面中；
+
+ 通过e.currentTarget.id;获取设">
+<meta name="twitter:image" content="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/61A7F58F4C284225B5A836710089610C/374">
 
 
 
@@ -111,7 +141,7 @@
   };
 </script>
 
-  <title> 第一天 你想好清楚了吗 | Smaluv 芦苇虽小 </title>
+  <title> 微信小程序开发-list跳转带值传递 | Smaluv 芦苇虽小 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -241,7 +271,7 @@
             
             
               
-                第一天 你想好清楚了吗
+                微信小程序开发-list跳转带值传递
               
             
           </h1>
@@ -253,8 +283,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-12T08:58:26+08:00" content="2016-09-12">
-              2016-09-12
+            <time itemprop="dateCreated" datetime="2016-10-13T21:24:01+08:00" content="2016-10-13">
+              2016-10-13
             </time>
           </span>
 
@@ -267,8 +297,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/微信小程序/" itemprop="url" rel="index">
+                    <span itemprop="name">微信小程序</span>
                   </a>
                 </span>
 
@@ -283,8 +313,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/12/开学第一天/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/12/开学第一天/" itemprop="commentsCount"></span>
+                <a href="/2016/10/13/微信小程序开发-list跳转带值传递/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/13/微信小程序开发-list跳转带值传递/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -294,7 +324,7 @@
 
           
           
-             <span id="/2016/09/12/开学第一天/" class="leancloud_visitors" data-flag-title="第一天 你想好清楚了吗">
+             <span id="/2016/10/13/微信小程序开发-list跳转带值传递/" class="leancloud_visitors" data-flag-title="微信小程序开发-list跳转带值传递">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -316,7 +346,41 @@
       
 
       
-        <p>你是否看到平时他们无意之中透入的真实情感，你已经落后太多；你没有看到，你自己交流时，自己发现已经跟他们说不上对套的话了吗？你在干什么，看起来忙碌，但是你做出什么来了吗？不逼一下自己，三年这个会相差多大，你衡量的起吗？你想让大家都make fun of with you 吗？时间利用起来，不要浪费你，你真的没有时间可以玩了，行动起来，对自己狠一点，会有收获的，目标前进！！！</p>
+        <h3 id="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识"><a href="#小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识" class="headerlink" title="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识"></a>小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识</h3><hr>
+<ol>
+<li>设置id的方法标识跳转<br> 在要跳转的item处，设置一个id并给当前的id赋值上对应的key值，比如一部电影的id（后面带着id去下一个页面查询，详细信息）如：</li>
+</ol>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/61A7F58F4C284225B5A836710089610C/374" alt="image"></p>
+<p>后我们在js的bindtap的响应事件中获取，并传递到下一个界面中；</p>
+<blockquote>
+<p> 通过e.currentTarget.id;获取设置的id值，并通过设置全局对象的方式来传递数值，//获取全局对象  var app=getApp(); //设置全局的请求访问传递的参数   app.requestDetailid=id;</p>
+</blockquote>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/B558EF17F7A3416CB89A83B57761A1B9/372" alt="image"></p>
+<p>  tip：其实我们也可以在，wxml中查看到我们设置的每一个item的id值</p>
+<p>  <img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/916AC69674154FF5840A483755523441/399" alt="image"></p>
+<ol>
+<li>通过使用data - xxxx 的方法来标识，xxxx可以自定义取名 比如data-key等等都可以。</li>
+</ol>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/ADBAAC7F2AE4437F9F4317028910D732/411" alt="image"></p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/9FD6EC16920C4828ACB902DB46132A94/407" alt="image"></p>
+<p>在js的bindtap的响应事件中：</p>
+<p>通过数据解析一层层找到数据，</p>
+<blockquote>
+<p>var id=e.target.dataset.id(根据你的data-id的取名)</p>
+</blockquote>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/BDEB5B20E84A4268A617B013345DEA88/417" alt="image"></p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/D9879D54671245D085EB305BAAB007D1/428" alt="image"></p>
+<hr>
+<p>上面的方式设置好了之后，页面跳转后，我们就需要在下一个页面拿到传递的数据（这个数据在传递前，就已经被设置成全局变量）</p>
+<p>在跳转后的js页面，接收传递过来的数据detail.js</p>
+<blockquote>
+<p>同样通过全局额方式取值出来，（即和app.js中取某个变量的值是一样的）</p>
+</blockquote>
+<p>var movieid=getApp().MovieDetailid;<br>console.log(movieid);</p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/6F9502AC3B97449E8DA62EDD40F01F94/452" alt="image"></p>
+<ul>
+<li>到此为止，我们数值传递并接收成功，后面就可以根据我们接收的参数，进行进一步的操作了。</li>
+</ul>
 
       
     </div>
@@ -338,7 +402,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/个人博客/" rel="tag">#个人博客</a>
+            <a href="/tags/微信小程序/" rel="tag">#微信小程序</a>
           
         </div>
       
@@ -347,17 +411,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/10/建立个人博客方法/" rel="next" title="建立个人博客方法   Hexo  + Github pages技术">
-                <i class="fa fa-chevron-left"></i> 建立个人博客方法   Hexo  + Github pages技术
+              <a href="/2016/09/13/20160913我的开学第一课/" rel="next" title="20160913我的开学第一课">
+                <i class="fa fa-chevron-left"></i> 20160913我的开学第一课
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/09/13/20160913我的开学第一课/" rel="prev" title="20160913我的开学第一课">
-                20160913我的开学第一课 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -383,8 +443,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/12/开学第一天/"
-           data-title="第一天 你想好清楚了吗" data-url="http://yoursite.com/2016/09/12/开学第一天/">
+      <div class="ds-thread" data-thread-key="2016/10/13/微信小程序开发-list跳转带值传递/"
+           data-title="微信小程序开发-list跳转带值传递" data-url="http://yoursite.com/2016/10/13/微信小程序开发-list跳转带值传递/">
       </div>
     
   </div>
@@ -475,7 +535,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识"><span class="nav-number">1.</span> <span class="nav-text">小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识</span></a></li></ol></div>
             
           </div>
         </section>

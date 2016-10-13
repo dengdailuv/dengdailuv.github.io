@@ -243,6 +243,169 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/13/微信小程序开发-list跳转带值传递/" itemprop="url">
+                  微信小程序开发-list跳转带值传递
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-13T21:24:01+08:00" content="2016-10-13">
+              2016-10-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/微信小程序/" itemprop="url" rel="index">
+                    <span itemprop="name">微信小程序</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/13/微信小程序开发-list跳转带值传递/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/13/微信小程序开发-list跳转带值传递/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/13/微信小程序开发-list跳转带值传递/" class="leancloud_visitors" data-flag-title="微信小程序开发-list跳转带值传递">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识"><a href="#小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识" class="headerlink" title="小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识"></a>小程序list数据带值跳转，一可以直接通过设置item的id来标识或者通过设置键值data-xxxx的方式标识</h3><hr>
+<ol>
+<li>设置id的方法标识跳转<br> 在要跳转的item处，设置一个id并给当前的id赋值上对应的key值，比如一部电影的id（后面带着id去下一个页面查询，详细信息）如：</li>
+</ol>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/61A7F58F4C284225B5A836710089610C/374" alt="image"></p>
+<p>后我们在js的bindtap的响应事件中获取，并传递到下一个界面中；</p>
+<blockquote>
+<p> 通过e.currentTarget.id;获取设置的id值，并通过设置全局对象的方式来传递数值，//获取全局对象  var app=getApp(); //设置全局的请求访问传递的参数   app.requestDetailid=id;</p>
+</blockquote>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/B558EF17F7A3416CB89A83B57761A1B9/372" alt="image"></p>
+<p>  tip：其实我们也可以在，wxml中查看到我们设置的每一个item的id值</p>
+<p>  <img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/916AC69674154FF5840A483755523441/399" alt="image"></p>
+<ol>
+<li>通过使用data - xxxx 的方法来标识，xxxx可以自定义取名 比如data-key等等都可以。</li>
+</ol>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/ADBAAC7F2AE4437F9F4317028910D732/411" alt="image"></p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/9FD6EC16920C4828ACB902DB46132A94/407" alt="image"></p>
+<p>在js的bindtap的响应事件中：</p>
+<p>通过数据解析一层层找到数据，</p>
+<blockquote>
+<p>var id=e.target.dataset.id(根据你的data-id的取名)</p>
+</blockquote>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/BDEB5B20E84A4268A617B013345DEA88/417" alt="image"></p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/D9879D54671245D085EB305BAAB007D1/428" alt="image"></p>
+<hr>
+<p>上面的方式设置好了之后，页面跳转后，我们就需要在下一个页面拿到传递的数据（这个数据在传递前，就已经被设置成全局变量）</p>
+<p>在跳转后的js页面，接收传递过来的数据detail.js</p>
+<blockquote>
+<p>同样通过全局额方式取值出来，（即和app.js中取某个变量的值是一样的）</p>
+</blockquote>
+<p>var movieid=getApp().MovieDetailid;<br>console.log(movieid);</p>
+<p><img src="http://note.youdao.com/yws/public/resource/62424b37d0ce219028b6b607a59d9de0/xmlnote/6F9502AC3B97449E8DA62EDD40F01F94/452" alt="image"></p>
+<ul>
+<li>到此为止，我们数值传递并接收成功，后面就可以根据我们接收的参数，进行进一步的操作了。</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/13/20160913我的开学第一课/" itemprop="url">
                   20160913我的开学第一课
                 </a>
@@ -1217,7 +1380,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1225,7 +1388,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -1234,7 +1397,7 @@
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
