@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="前端开发  微信小程序," />
 
 
 
@@ -84,15 +84,28 @@
 
 
 
-<meta name="description" content="芦苇虽小 心不小">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Smaluv 芦苇虽小">
-<meta property="og:url" content="http://yoursite.com/categories/生活/index.html">
+<meta name="description" content="今天做微信小程序开发，可能前几天自己做出来了一个小程序豆瓣的demo（实现热映电影、搜索电影和即将上映功能），然后有人私信我问我一串数据怎么解析，然后我一看，发现是json数据，立马觉得小事一件，后面发现自己too young too  …了,于是就对js 的json数据解析的进行脑补知识，最后，就得出了这些笔记：
+&amp;gt;他给我的数据截图：
+&amp;gt;以及我自己使用豆瓣api得到的数据：
+其实两者">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS解析JSON数据">
+<meta property="og:url" content="http://yoursite.com/2016/10/18/JS解析JSON数据/index.html">
 <meta property="og:site_name" content="Smaluv 芦苇虽小">
-<meta property="og:description" content="芦苇虽小 心不小">
+<meta property="og:description" content="今天做微信小程序开发，可能前几天自己做出来了一个小程序豆瓣的demo（实现热映电影、搜索电影和即将上映功能），然后有人私信我问我一串数据怎么解析，然后我一看，发现是json数据，立马觉得小事一件，后面发现自己too young too  …了,于是就对js 的json数据解析的进行脑补知识，最后，就得出了这些笔记：
+&amp;gt;他给我的数据截图：
+&amp;gt;以及我自己使用豆瓣api得到的数据：
+其实两者">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/1520e2ae2a5cf301c9b03310b72155ef/xmlnote/359D901162F147AFB1E11A8D703EE1C7/467">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/1520e2ae2a5cf301c9b03310b72155ef/xmlnote/18F08A7C87F44A4CAB814DADC184A9B0/469">
+<meta property="og:updated_time" content="2016-10-18T13:40:12.003Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Smaluv 芦苇虽小">
-<meta name="twitter:description" content="芦苇虽小 心不小">
+<meta name="twitter:title" content="JS解析JSON数据">
+<meta name="twitter:description" content="今天做微信小程序开发，可能前几天自己做出来了一个小程序豆瓣的demo（实现热映电影、搜索电影和即将上映功能），然后有人私信我问我一串数据怎么解析，然后我一看，发现是json数据，立马觉得小事一件，后面发现自己too young too  …了,于是就对js 的json数据解析的进行脑补知识，最后，就得出了这些笔记：
+&amp;gt;他给我的数据截图：
+&amp;gt;以及我自己使用豆瓣api得到的数据：
+其实两者">
+<meta name="twitter:image" content="http://note.youdao.com/yws/public/resource/1520e2ae2a5cf301c9b03310b72155ef/xmlnote/359D901162F147AFB1E11A8D703EE1C7/467">
 
 
 
@@ -110,7 +123,7 @@
   };
 </script>
 
-  <title> 分类: 生活 | Smaluv 芦苇虽小 </title>
+  <title> JS解析JSON数据 | Smaluv 芦苇虽小 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -141,7 +154,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -219,75 +232,180 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        生活
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/12/开学第一天/" itemprop="url">
-              
-                <span itemprop="name">第一天 你想好清楚了吗</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-12T08:58:26+08:00"
-              content="2016-09-12" >
-          09-12
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/03/我的第一篇文章/" itemprop="url">
-              
-                <span itemprop="name">Smaluv 个人站点上线了</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-09-03T11:00:49+08:00"
-              content="2016-09-03" >
-          09-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JS解析JSON数据
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-18T21:37:52+08:00" content="2016-10-18">
+              2016-10-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/18/JS解析JSON数据/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/18/JS解析JSON数据/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/18/JS解析JSON数据/" class="leancloud_visitors" data-flag-title="JS解析JSON数据">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>今天做微信小程序开发，可能前几天自己做出来了一个小程序豆瓣的demo（实现热映电影、搜索电影和即将上映功能），然后有人私信我问我一串数据怎么解析，然后我一看，发现是json数据，立马觉得小事一件，后面发现自己too young too  …了,于是就对js 的json数据解析的进行脑补知识，最后，就得出了这些笔记：</p>
+<p>&gt;<br>他给我的数据截图：<img src="http://note.youdao.com/yws/public/resource/1520e2ae2a5cf301c9b03310b72155ef/xmlnote/359D901162F147AFB1E11A8D703EE1C7/467" alt="image"></p>
+<p>&gt;<br>以及我自己使用豆瓣api得到的数据：<img src="http://note.youdao.com/yws/public/resource/1520e2ae2a5cf301c9b03310b72155ef/xmlnote/18F08A7C87F44A4CAB814DADC184A9B0/469" alt="image"></p>
+<p>其实两者，表面看起来真的很像一样的（我用插件格式化了一下），所以后面就真的入坑了，我们可以看到，其实这两者还是有明显区别的，一个只是请求得到的结果字符集，另个则是json对象集合。</p>
+<p>对于字符集，我们可以使用一下方法进行解析，得到我们想要的结果：</p>
+<ul>
+<li>1、转换成JSON<blockquote>
+<pre><code>var data = &quot;{}&quot; //你的json字符串
+var jsonObj = JSON.parse(res.data);
+</code></pre></blockquote>
+</li>
+</ul>
+<p>后面的操作就是跟使用json的方式一样了，想怎么拿就怎么拿；</p>
+<ul>
+<li>一层一层的剥开<blockquote>
+<p>  如， 拿取字符里面的data对象：  a[“data”]</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>拿取data对象的list对象  ：a[“data”][“list”]   -&gt; 对象就用这个当时解</p>
+<p>拿取list对象里面的数据：<br>        a[“data”][“list”][0].title<br>获取list对象里面的title数据</p>
+</blockquote>
+<hr>
+<p>我也只测试了第一种，这个只是个人的学习，可能会有不正确，多多指教。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端开发-微信小程序/" rel="tag">#前端开发  微信小程序</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/13/微信小程序开发-list跳转带值传递/" rel="next" title="微信小程序开发-list跳转带值传递">
+                <i class="fa fa-chevron-left"></i> 微信小程序开发-list跳转带值传递
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -295,6 +413,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/10/18/JS解析JSON数据/"
+           data-title="JS解析JSON数据" data-url="http://yoursite.com/2016/10/18/JS解析JSON数据/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -314,8 +440,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/smaluv.jpg"
@@ -365,6 +500,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -468,6 +614,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
